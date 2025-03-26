@@ -1,4 +1,4 @@
-const mudiExperience = ({
+const mudiExperience = ({ 
 
     /* Datos del cliente */
     numberSku           = null , 
