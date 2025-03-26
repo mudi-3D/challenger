@@ -92,7 +92,7 @@ const mudiExperience = ({
         p.classList.add('tooltipMudi') ; 
         p.setAttribute('style','opacity:0')
         p.innerHTML=`<b style="color:#231c1c;">¡Nuevo!</b> Descubre como este producto se ve en 3D y en tu  Espacio usando Realidad&nbsp;Aumentada`;
-        flexDirectionBtns == 'column' ? p.setAttribute('style','top:-50%') : p.setAttribute('style','top:-55%')
+        flexDirectionBtns == 'column' ? p.setAttribute('style','top:-50%') : p.setAttribute('style','top:-140%')
         div.querySelector('.tooltipMudiContainer').appendChild(p);
         setTimeout(()=>hideToolTip(div),intervaleTime);
     }; 
