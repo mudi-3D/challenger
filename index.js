@@ -20,7 +20,7 @@ const mudiExperience = ({
     // Configuraciones de estilo.
     fatherContainer = document.body,
     zindexBTN = 90,
-    zindexModal = 99,
+    zindexModal = 100000000,
     flexDirectionBtns = 'column',
     color = null,
 
@@ -71,8 +71,8 @@ const mudiExperience = ({
         div.classList.add('containerBtnsMudi');
         div.innerHTML = ` 
         <div class="tooltipMudiContainer" style="z-index:${zindexBTN}; flex-direction:${flexDirectionBtns}" idCompany="${idCompany}">
-            <img sku="${numberSku}" class="imgBtn3D" id="img3DBtn" src="https://mudi.com.co/cliente/${idCompany}/btn3D.webp" alt="btnMudi3D" onLoad="console.log('hola3d')">
-            <img sku="${numberSku}" class="imgBtnAR" id="imgARBtn" src="https://mudi.com.co/cliente/${idCompany}/btnAR.webp" alt="btnMudiAR" onLoad="console.log('hola3d')">   
+            <img sku="${numberSku}" class="imgBtn3D" id="img3DBtn" src="https://mudi.com.co/cliente/${idCompany}/btn3D.webp" alt="btnMudi3D" >
+            <img sku="${numberSku}" class="imgBtnAR" id="imgARBtn" src="https://mudi.com.co/cliente/${idCompany}/btnAR.webp" alt="btnMudiAR" >   
         </div>`;
 
         // Asociamos el evento Click con el comportamiento de crear los modales
@@ -92,7 +92,7 @@ const mudiExperience = ({
         p.classList.add('tooltipMudi');
         p.setAttribute('style', 'opacity:0')
         p.innerHTML = `<b style="color:#231c1c;">¡Nuevo!</b> Descubre como este producto se ve en 3D y en tu  Espacio usando Realidad&nbsp;Aumentada`;
-        flexDirectionBtns == 'column' ? p.setAttribute('style', 'top:-50%') : p.setAttribute('style', 'top:-140%')
+        flexDirectionBtns == 'column' ? p.setAttribute('style', '') : p.setAttribute('style', '')
         div.querySelector('.tooltipMudiContainer').appendChild(p);
         setTimeout(() => hideToolTip(div), intervaleTime);
     };
